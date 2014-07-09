@@ -1,0 +1,14 @@
+{
+    "name":"table-to-spreadsheet",
+    "version":"0.0.1",
+    "manifest_version": 2,
+    "description":"Convert the table element to spreadsheet",
+    "permissions":["contextMenus"],
+    "background": {
+        "scripts": ["js/background.js"]
+    },
+    "content_scripts": [{
+        "matches": ["<all_urls>"],
+        "js": ["js/main.js", "js/XLSXSheet.js", "js/Converter.js", "vendor/jquery.js", "vendor/lodash.compat.js", "vendor/xlsx.core.min.js", "vendor/Blob.min.js", "vendor/FileSaver.min.js"]
+    }]
+}

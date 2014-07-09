@@ -1,0 +1,19 @@
+{
+  "name": "crx-table-to-spreadsheet",
+  "version": "0.0.1",
+  "authors": [
+    "moznion <moznion@gmail.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "2.1.1",
+    "lodash": "2.4.1"
+  }
+}
