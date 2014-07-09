@@ -17,6 +17,11 @@ Setup sequence to develop is follows;
 2. ./node\_modules/.bin/bower install
 3. ./node\_modules/.bin/gulp
 
+Known Bugs
+----------
+
+This extension cannot treat nested table elements. I wonder should I do...
+
 License
 -------
 
