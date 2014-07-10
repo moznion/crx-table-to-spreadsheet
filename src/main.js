@@ -29,7 +29,8 @@
                         return;
                 }
 
-                sheet.vend(data);
+                var sheetObj = sheet.vend(data);
+                saveAs(new Blob([sheetObj.contents], {type:sheetObj.contentType}), sheetObj.filename);
             }
         }
     });

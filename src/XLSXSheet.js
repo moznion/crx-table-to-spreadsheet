@@ -61,7 +61,12 @@ var XLSXSheet = (function () {
         wb.Sheets[ws_name] = ws;
 
         var wbout = XLSX.write(wb, {bookType: 'xlsx', bookSST: true, type: 'binary'});
-        saveAs(new Blob([s2ab(wbout)], {type:"application/octet-stream"}), "table.xlsx");
+
+        return {
+            contents: s2ab(wbout),
+            contentType: "application/octet-stream",
+            filename: "table.xlsx"
+        };
     };
 
     return XLSXSheet;

@@ -82,7 +82,7 @@ gulp.task('build', function () {
 gulp.task('zip', ['build'], function () {
     return version().then(function (version) {
         return gulp.src('app/**/*')
-        .pipe(zip('force-metacpan' + version + '.zip'))
+        .pipe(zip('table-to-spreadsheet' + version + '.zip'))
         .pipe(gulp.dest('build'));
     });
 });

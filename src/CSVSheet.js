@@ -4,8 +4,17 @@ var CSVSheet = (function () {
 
     CSVSheet.prototype.vend = function (data) {
         var csvText = new CSV(data).encode();
-        saveAs(new Blob([csvText], {type:"text/csv"}), "table.csv");
+
+        return {
+            contents: csvText,
+            contentType: "text/csv",
+            filename: "table.csv"
+        };
     };
 
     return CSVSheet;
 }());
+
+if (process.env.NODE_ENV === "test") {
+   exports.CSVSheet = CSVSheet;
+}
