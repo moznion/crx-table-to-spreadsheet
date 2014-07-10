@@ -72,3 +72,6 @@ var XLSXSheet = (function () {
     return XLSXSheet;
 })();
 
+if (process.env.NODE_ENV === "test") {
+   exports.XLSXSheet = XLSXSheet;
+}
