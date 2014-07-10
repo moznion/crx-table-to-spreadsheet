@@ -1,4 +1,4 @@
-table-to-spreadsheet
+table-to-spreadsheet [![Build Status][travis-image]][travis-url]
 ====================
 
 Chrome extension to provide the CSV or XLSX that is converted from the table element by context menu
@@ -41,3 +41,5 @@ See the License for the specific language governing permissions and
 limitations under the License.
 ```
 
+[travis-url]: https://travis-ci.org/moznion/crx-table-to-spreadsheet
+[travis-image]: https://travis-ci.org/moznion/crx-table-to-spreadsheet.svg?branch=master

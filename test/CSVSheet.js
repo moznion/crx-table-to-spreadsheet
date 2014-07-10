@@ -3,7 +3,7 @@ var should = require('chai').should();
 
 var csvSheet = require('../src/CSVSheet.js');
 
-describe('Converter', function() {
+describe('CSV', function() {
     describe('#vend', function(){
         it('should be successful to build CSV components', function(){
             var csvObject = new csvSheet.CSVSheet().vend([
