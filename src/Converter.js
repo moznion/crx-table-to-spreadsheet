@@ -19,6 +19,6 @@ var Converter = (function () {
     return Converter;
 })();
 
-if (process.env.NODE_ENV === "test") {
+if(typeof process !== "undefined" && process.env && process.env.NODE_ENV === 'test') {
    exports.Converter = Converter;
 }

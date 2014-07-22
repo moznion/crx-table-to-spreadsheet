@@ -15,6 +15,6 @@ var CSVSheet = (function () {
     return CSVSheet;
 }());
 
-if (process.env.NODE_ENV === "test") {
+if(typeof process !== "undefined" && process.env && process.env.NODE_ENV === 'test') {
    exports.CSVSheet = CSVSheet;
 }
